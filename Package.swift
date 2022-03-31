@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "input-source-manager-cli",
+    products: [
+        .executable(name: "input-source-manager-cli", targets: ["InputSourceManagerCli"])
+    ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
@@ -13,10 +16,10 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .executableTarget(
-            name: "input-source-manager-cli",
+            name: "InputSourceManagerCli",
             dependencies: []),
         .testTarget(
-            name: "input-source-manager-cliTests",
-            dependencies: ["input-source-manager-cli"]),
+            name: "InputSourceManagerCliTests",
+            dependencies: ["InputSourceManagerCli"]),
     ]
 )
