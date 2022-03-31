@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "input-source-manager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/robinlieb/input-source-manager",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a7afd82f1d610cde4bc2ce5a5eb56c2a0cfc6e33"
+      }
+    },
+    {
       "identity" : "swift-argument-parser",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-argument-parser",
