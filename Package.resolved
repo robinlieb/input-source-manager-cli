@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/robinlieb/input-source-manager",
       "state" : {
-        "branch" : "main",
-        "revision" : "a7afd82f1d610cde4bc2ce5a5eb56c2a0cfc6e33"
+        "revision" : "aa429d1634bc0c977144e6dd5c60053105d8d1c5",
+        "version" : "1.0.0"
       }
     },
     {
