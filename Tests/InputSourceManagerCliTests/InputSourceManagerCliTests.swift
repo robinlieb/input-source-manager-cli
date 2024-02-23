@@ -27,9 +27,12 @@ final class InputSourceManagerCliTests: XCTestCase {
         process.waitUntilExit()
 
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
-        let output = String(data: data, encoding: .utf8)
+        guard let output = String(data: data, encoding: .utf8) else {
+            XCTFail()
+            return
+        }
 
-        XCTAssertEqual(output, "Hello, world!\n")
+        XCTAssertTrue(output.contains("A Swift command-line tool to orchestrate the input sources on MacOS"))
         #endif
     }
 
